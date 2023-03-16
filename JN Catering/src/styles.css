@@ -1,0 +1,264 @@
+/**
+*  comments
+* ! makes red
+* ? makes blue
+**/
+
+
+/**
+*! CHANGING DEFAULT BROWSER SETTINGS
+**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+i{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #fdf4f9;
+}
+/**
+*! NAVBAR STYLES ARE HERE
+**/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: 10em;
+    background-color: #0e1118;
+    color: #fdf4f9;
+    padding: 25px 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+    z-index: 1;
+}
+.cart{
+    position: relative;
+    background-color: white;
+    color: black;
+    padding: 5px;
+    font-size: 30px;
+    border-radius: 4px;
+}
+.cartAmount{
+    position: absolute;
+    top:-15px;
+    right: -10px;
+    font-size: 16px;
+    background-color: red;
+    color: white;
+    padding: 3px;
+    border-radius: 3px;
+}
+.container{
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.btn-primary{
+    margin-left: 100px;
+    margin-top: 50px;
+    height: 50px;
+    width: 200px;
+    font-size: xx-large;
+    background-color: #0e1118;
+    color: #fdf4f9;
+    border-radius: 20px;
+}
+.right-hero{
+    padding-bottom: 50px;
+}
+/**
+* ! SLIDESHOW HERE
+**/
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-top: 15rem;
+}
+  
+  .slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s linear;
+}  
+  .slideshow img.active {
+    opacity: 1;
+}
+/** 
+* ! HERO SECTION CUSTOMIZATIONS HERE
+**/
+
+.hero{
+    height: 1500px;
+    padding: 100px;
+}
+.btn-primary{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    margin-bottom: 65px; 
+    background-color: #0077b6;
+    color: oldlace;
+}
+button:hover{
+    color: #0077b6;
+    border: 5px solid black;
+    cursor: pointer; 
+    background-color: white;   
+}
+.home-span{
+    color: blue;
+}
+.menu-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+}
+.menu-section h1 {
+    padding-bottom: 10px; 
+  }  
+.menu-section p {
+    padding-top: 10px; 
+  }
+#menu-img {
+    display: block;
+    margin: 0 auto; 
+    width: 75%; 
+    height: auto; 
+    padding: 10rem;
+  }
+  .ready-to-order{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 25px;
+}
+/**
+* ! SHOP ITEMS STYLES ARE HERE
+**/
+
+.meat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 223px);
+    gap: 30px;
+    justify-content: center;
+    background-color: gray;
+    padding-top: 55px;  
+    padding-bottom: 20px;
+  }
+  
+  .side-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    gap: 30px;
+    justify-content: center;
+    background-color: lightgray;
+    padding-top: 55px;
+    padding-bottom: 20px;
+  }
+  
+.item {
+    border: 2px solid #0e1118;
+    border-radius: 4px;
+    margin-bottom: 2px;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10px;
+}
+.price-quantity{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.buttons{
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+}
+.bi-dash-lg{
+    color: red;
+}
+.bi-plus-lg{
+    color: green;
+}
+
+/**
+* ! STYLE FOR LABEL AND BUTTONS
+**/
+
+.text-center{
+    text-align: center;        
+    padding: 200px;  
+    margin-bottom: 20px;
+}
+
+.HomeBtn{
+    background-color: #212529;
+    color: white;
+    border: none;
+    padding: 6px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/**
+* ! CART PAGE STYLES
+**/
+.shopping-cart{
+    padding: 300px 0 0 0;
+    display: grid;
+    width: 320px;
+    grid-template-columns: repeat(1,320px);
+    justify-content: center;
+    gap: 15px;
+    
+}
+.cart-item{
+    border: 2px solid black;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.bi-x-lg{
+    color: red;
+    font-weight: bold;
+}
+
+.title-price-x{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 2px;
+}
+
+.title-price{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
